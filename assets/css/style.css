@@ -173,3 +173,86 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: var(--pistachio);
 }
+
+/*REUSED*/
+
+.container {
+    padding-inline: 15px;
+}
+
+.section-subtitle {
+    color: var(--color, var(--pistachio));
+    font-size: var(--fs, var(--fs-8));
+    font-family: var(--ff, var(--ff-roboto));
+    font-weight: var(--fw-600);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.h1,
+.h2 { font-weight: var(--fw-300);}
+
+.h2,
+h3 { line-height: 1.6;}
+
+.h2 { 
+    font-size: var(--fs-3);
+    color: var(--eerie-black-2);
+}
+.h3 {
+    font-size: var(--fs-5);
+    color: var(--eerie-black-2);
+}
+
+.h4 {
+    color: var(--white);
+    font-size: var(--fs-6);
+}
+
+.btn {
+    position: relative;
+    background-color: var(--btn-bg, var(--pistachio));
+    color: var(--white);
+    font-weight: var(--fw-600);
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition-2);
+}
+
+.btn ion-icon {
+    --ionicon-stroke-width: 55px;
+    font-size: 1.8rem;
+}
+
+.btn:not(.btn-outline)::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--btn-bg, var(--pistachio));
+    transform: translate(5px, 5px);
+    transition: var(--transition-2);
+}
+
+.btn:is(:hover, :focus)::after { transform: translate(0, 0);}
+
+.btn-secondary { --btn-bg: var(--black);}
+
+.btn-secondary:is(:hover, :focus){ --btn-bg: var(--pistachio);}
+
+.btn-outline { 
+    border: 2px solid var(--white);
+    background-color: transparent;
+}
+
+.btn-white {
+    --btn-bg: var(--platinum);
+    color: var(--black);
+}
+
+.section { padding-block: var(--section-padding);}
+
+.w-100 { width: 100%;}
+.section-text { line-height: 2;}

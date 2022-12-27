@@ -1,0 +1,35 @@
+/*features*/
+
+.features {
+    padding-block-start: 0;
+    background-color: var(--eerie-black-1);
+}
+
+.features-list {
+    display: grid;
+    gap: 30px;
+}
+
+.features-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.features-item .item-icon {
+    color: var(--pistachio);
+    font-size: 5.5rem;
+    margin-block-start: 10px;
+}
+
+.features-item .item-icon ion-icon {
+    --ionicon-stroke-width: 25px;
+}
+
+.features-item .item-title { margin-block-end: 10px;}
+
+.features-item .item-text {
+    max-width: 25ch;
+    color: var(--white_50);
+    font-size: var(--fs-9);
+}
